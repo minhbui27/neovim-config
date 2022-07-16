@@ -16,7 +16,9 @@ This is the root directory for my neovim config
 - nvim-lspconfig, nvim-lspinstaller
 - cmp-nvim-lsp, cmp-buffter, cmp-path, cmp-cmdline, nvim-cmp
 ###
+##
 ###Some Requirements (that weren't obvious):
 - Rust, Go, cargo, python3-pip3
 - npm,node (latest compatible versions)
 - wget, curl, tar, gzip, bash, sh, git
+###
