@@ -99,3 +99,4 @@ require('lspconfig')['clangd'].setup{
     settings = {
       ["clangd"] = {}
     }
+}
