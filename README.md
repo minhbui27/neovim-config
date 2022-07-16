@@ -1,7 +1,7 @@
 # neovim-config
 This is the root directory for my neovim config
-### Plugin manager: Vim-plug
-### Plugins:
+## Plugin manager: Vim-plug
+###Plugins:
 - Powerline-rust (faster than powerline-shell)
 - Lightline
 - NERDTree
@@ -15,7 +15,8 @@ This is the root directory for my neovim config
 - vsnip, vsnip-integ
 - nvim-lspconfig, nvim-lspinstaller
 - cmp-nvim-lsp, cmp-buffter, cmp-path, cmp-cmdline, nvim-cmp
-###Some Requirements (that weren't obvious)
+###
+###Some Requirements (that weren't obvious):
 - Rust, Go, cargo, python3-pip3
 - npm,node (latest compatible versions)
 - wget, curl, tar, gzip, bash, sh, git
