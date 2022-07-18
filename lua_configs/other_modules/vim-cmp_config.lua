@@ -11,7 +11,7 @@ capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
 -- The following example advertise capabilities to `clangd`.
 require'lspconfig'.clangd.setup {
 	capabilities = capabilities,
-}  
+}
 -- Setup nvim-cmp.
 local cmp = require'cmp'
 
@@ -105,5 +105,8 @@ require('lspconfig')['tailwindcss'].setup {
 	capabilities = capabilities
 }
 require('lspconfig')['clangd'].setup {
+	capabilities = capabilities
+}
+require('lspconfig')['sumneko_lua'].setup {
 	capabilities = capabilities
 }
