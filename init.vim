@@ -8,8 +8,8 @@
 :set mouse=a
 :set nohlsearch
 :set scrolloff=8
-
-
+:set noswapfile
+vnoremap <space>F :lua vim.lsp.buf.range_formatting() <CR>
 if exists('+termguicolors')
 	let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 	let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
@@ -45,6 +45,10 @@ Plug 'hrsh7th/nvim-cmp'
 " Plugin for using null-ls
 Plug 'nvim-lua/plenary.nvim'
 Plug 'https://github.com/jose-elias-alvarez/null-ls.nvim'
+
+" Plugins for FZF fuzzy finder
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 lua << eof

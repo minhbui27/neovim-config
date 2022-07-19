@@ -9,11 +9,12 @@ vim.keymap.set("n", "<space>q", vim.diagnostic.setloclist, opts)
 -- after the language server attaches to the current buffer
 local on_attach = function(client, bufnr)
 	-- Below are language servers that null-ls will override
-	if client.name == "sumneko_lua" then
-		client.resolved_capabilities.document_formatting = false
-	end
+	-- if client.name == "sumneko_lua" then
+	-- 	client.resolved_capabilities.document_formatting = false
+	-- end
 	if client.name == "tsserver" then
 		client.resolved_capabilities.document_formatting = false
+		client.resolved_capabilities.document_range_formatting = false
 	end
 	-- Enable completion triggered by <c-x><c-o>
 	vim.api.nvim_buf_set_option(bufnr, "omnifunc", "v:lua.vim.lsp.omnifunc")

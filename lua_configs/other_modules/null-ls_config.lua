@@ -9,4 +9,3 @@ require("null-ls").setup({
 		}),
 	},
 })
-null_ls.helpers.range_formatting_args_factory(base_args, start_arg, end_rag, opts)
