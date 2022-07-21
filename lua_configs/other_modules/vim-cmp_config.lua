@@ -110,3 +110,6 @@ require('lspconfig')['clangd'].setup {
 require('lspconfig')['sumneko_lua'].setup {
 	capabilities = capabilities
 }
+require('lspconfig')['astro'].setup {
+	capabilities = capabilities
+}

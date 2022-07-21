@@ -115,3 +115,11 @@ require("lspconfig")["sumneko_lua"].setup({
 		["sumneko_lua"] = {},
 	},
 })
+require("lspconfig")["astro"].setup({
+	on_attach = on_attach,
+	flags = lsp_flags,
+	-- Server-specific settings...
+	settings = {
+		["sumneko_lua"] = {},
+	},
+})
