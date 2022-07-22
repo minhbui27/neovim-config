@@ -15,7 +15,8 @@ if exists('+termguicolors')
 	let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 	set termguicolors
 endif
-
+" Line below to enable TreeSitter in astro files
+au! BufRead,BufNewFile *.astro set filetype=astro
 call plug#begin()
 Plug 'itchyny/lightline.vim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
