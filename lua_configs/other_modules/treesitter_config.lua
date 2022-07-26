@@ -1,4 +1,8 @@
 require("nvim-treesitter.configs").setup({
+	context_commentstring = {
+	    enable = true,
+		enable_autocmd = false,
+	},
 	-- A list of parser names, or "all"
 	ensure_installed = { "c", "lua", "rust" },
 

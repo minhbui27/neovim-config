@@ -22,7 +22,9 @@ Plug 'itchyny/lightline.vim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'preservim/nerdtree'
 Plug 'https://github.com/tpope/vim-surround'
-Plug 'https://github.com/tpope/vim-commentary'
+" Plug 'https://github.com/tpope/vim-commentary'
+Plug 'https://github.com/numToStr/Comment.nvim'
+Plug 'https://github.com/JoosepAlviste/nvim-ts-context-commentstring'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'romgrk/barbar.nvim'
 Plug 'https://github.com/rafi/awesome-vim-colorschemes'
@@ -51,7 +53,7 @@ Plug 'https://github.com/jose-elias-alvarez/null-ls.nvim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 call plug#end()
-
+lua require('Comment').setup()
 lua << eof
 	require("nvim-lsp-installer").setup {}
 eof
@@ -74,7 +76,7 @@ let g:lightline = {
 :source ~/.config/nvim/lua_configs/other_modules/lsp_config.lua 
 :source ~/.config/nvim/lua_configs/other_modules/barbar_config.lua 
 :source ~/.config/nvim/lua_configs/other_modules/null-ls_config.lua
-
+:source ~/.config/nvim/lua_configs/other_modules/comment.lua
 
 
 
