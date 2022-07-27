@@ -48,7 +48,8 @@ Plug 'hrsh7th/nvim-cmp'
 " Plugin for using null-ls
 Plug 'nvim-lua/plenary.nvim'
 Plug 'https://github.com/jose-elias-alvarez/null-ls.nvim'
-
+" Plugin for autopair
+Plug 'windwp/nvim-autopairs'
 " Plugins for FZF fuzzy finder
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -77,7 +78,7 @@ let g:lightline = {
 :source ~/.config/nvim/lua_configs/other_modules/barbar_config.lua 
 :source ~/.config/nvim/lua_configs/other_modules/null-ls_config.lua
 :source ~/.config/nvim/lua_configs/other_modules/comment.lua
-
+:source ~/.config/nvim/lua_configs/other_modules/autopair_config.lua
 
 
 
