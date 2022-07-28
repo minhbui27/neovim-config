@@ -1,4 +1,5 @@
 :set number
+:set ma
 :set relativenumber
 :set autoindent
 :set tabstop=4
@@ -53,6 +54,9 @@ Plug 'windwp/nvim-autopairs'
 " Plugins for FZF fuzzy finder
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+
+" Plugin for opening terminal inside of nvim
+Plug 'akinsho/toggleterm.nvim', {'tag' : 'v2.*'}
 call plug#end()
 lua require('Comment').setup()
 lua << eof
@@ -79,6 +83,6 @@ let g:lightline = {
 :source ~/.config/nvim/lua_configs/other_modules/null-ls_config.lua
 :source ~/.config/nvim/lua_configs/other_modules/comment.lua
 :source ~/.config/nvim/lua_configs/other_modules/autopair_config.lua
-
+:source ~/.config/nvim/lua_configs/other_modules/toggleterm_config.lua
 
 
