@@ -57,6 +57,9 @@ Plug 'junegunn/fzf.vim'
 
 " Plugin for opening terminal inside of nvim
 Plug 'akinsho/toggleterm.nvim', {'tag' : 'v2.*'}
+
+" Plugin for startify starting screen
+Plug 'mhinz/vim-startify'
 call plug#end()
 lua require('Comment').setup()
 lua << eof
@@ -72,7 +75,7 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 let g:lightline = {
 			\ 'colorscheme': 'wombat',
 			\ }
-
+let g:startify_session_dir = '~/.config/nvim/session'
 :source ~/.config/nvim/lua_configs/other_modules/vim-cmp_config.lua
 :source ~/.config/nvim/lua_configs/other_modules/treesitter_config.lua
 :source ~/.config/nvim/lua_configs/other_modules/nvim-transparent_config.lua
@@ -84,5 +87,5 @@ let g:lightline = {
 :source ~/.config/nvim/lua_configs/other_modules/comment.lua
 :source ~/.config/nvim/lua_configs/other_modules/autopair_config.lua
 :source ~/.config/nvim/lua_configs/other_modules/toggleterm_config.lua
-
+:source ~/.config/nvim/vimscript_configs/start_screen.vim
 
